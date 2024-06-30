@@ -1,0 +1,26 @@
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/baidu/adu/common/output/so
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/baidu/adu/hdmap-common/output/so
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/baidu/adu-3rd/protobuf/lib
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/baidu/adu-3rd/mpfr/lib
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/baidu/adu-3rd/gflags/lib
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/baidu/adu-lab/hdmap-library/output/install/lib
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/baidu/adu/libs-xlog/output/so/
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/baidu/adu/libs-xlog/lib
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/baidu/adu-lab/hdmap-library/output/
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/baidu/adu-lab/hdmap-library/output/install/lab
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/baidu/adu-lab/map_distort/output/lib/
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/baidu/adu-3rd/grpc/lib
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/baidu/adu-lab/cybertron/output/install/lib
+
+export PATH=/home/wuhangchen/.Comake2/comake:$PATH
+PATH=/home/wuhangchen/.BCloud/bin:$PATH
+export PATH
+alias b='bcloud'
+alias bl='bcloud local'
+alias bb='bcloud build'
+
+#handle grabled
+export LC_ALL=zh_CN.UTF-8
+export LANG=zh_CN.UTF-8
+PATH=/home/apollo/.BCloud/bin:$PATH
+export PATH

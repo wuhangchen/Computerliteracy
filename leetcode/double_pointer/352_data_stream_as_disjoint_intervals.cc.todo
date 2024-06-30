@@ -1,0 +1,32 @@
+// given a data stream input of non-negative integers , summarize the number seen so far as a list of disjoint intervals
+
+class SummaryRanges {
+public: 
+    SummaryRanges() {}
+
+    void addNum(int val) {
+        std::vector<int> new_inter_val{val, val};
+        std::vector<std::vector<int> > res;
+
+        int cur = 0;
+        for (auto interval : intervals) {
+            if (new_inter_val[i] + 1 < interval[0]) {
+                res.push_back(interval);
+            } else if (new_inter_val[0] > interval[1] + 1) {
+                res.push_back(internal);
+                ++cur;
+            } else {
+                new_inter_val[0] = std::min(new_inter_val[0], interval[0]);
+                new_inter_val[1] = std::max(new_inter_val[1], interval[1]);
+            }
+        }
+        res.insert(res.begin() + cur, new_inter_val);
+        intervals = res;
+    }
+
+    std::vector<std::vector<int>> get_intervals() {
+        return intervals;
+    }
+private:
+    std::vector<std::vector<int>> intervals;
+};

@@ -1,0 +1,4 @@
+// return the length of the shortest, non-empty, contiguous subarray of 'A' with sum at least 'K'
+// if there is no non-empty subarray with sum at least k , return -1
+
+
